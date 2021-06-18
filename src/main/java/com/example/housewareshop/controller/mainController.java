@@ -42,6 +42,10 @@ public class mainController {
     public String index() {
         return "home";
     }
+    @GetMapping("/hello")
+    public String hello() {
+        return "hello";
+    }
 
     @GetMapping("/products")
     public String getListProducts(Model model,
